@@ -15,7 +15,7 @@ def index(request):
     #                     <span> TOP5 Useful Urls </span><a href="http://127.0.0.1:8000/top5/"> click </a>
     #                     ''')
 
-    params = {'name': 'Om Dodmani', 'desc': 'Django Python Developer', 'need': 'Looking For Jobs'}
+    params = {'name': 'XYZ', 'desc': 'Django Python Developer', 'need': 'Looking For Jobs'}
     return render(request, 'index.html', params)
 
 
@@ -23,7 +23,7 @@ def contact(request):
     # return HttpResponse('''<b> Email <b>  <p> omdodmani251@gmal.com <p> <br> <b> Phone <b> <p> 9175195711<p><br> <br>
     # <a href="http://127.0.0.1:8000/"> back </a>''')
 
-    params = {'email': 'omdodmani251@gmail.com', 'phone': '9175195711'}
+    params = {'email': 'xyz@gmail.com', 'phone': '8129740917489'}
     return render(request, 'contact.html', params)
 
 
@@ -39,7 +39,8 @@ def top5urls(request):
 
     params = {'Google': 'https://www.google.co.in/',
               'Twitter': 'https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in',
-              'Instagram': 'https://www.instagram.com/', 'Whatsapp': 'https://www.whatsapp.com/',
+              'Instagram': 'https://www.instagram.com/',
+              'Whatsapp': 'https://www.whatsapp.com/',
               'Facebook': 'https://www.facebook.com/'}
     return render(request, 'top5.html', params)
 
