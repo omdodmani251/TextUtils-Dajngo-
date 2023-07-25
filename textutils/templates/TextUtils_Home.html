@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text-Utils : Home</title>
+    <style>
+        .container {
+        padding : 20px;
+        margin : 20px;
+        border : 5px solid black;
+        border-radius : 20px;
+        text-align : center;
+
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <form action="/analyze" method="get">
+<h2> Welcome Enter the Text You Want to Analyze</h2>
+<textarea name='text' style="width: 1349px; height: 372px; border-radius: 30px; border: 2px solid black; padding: 20px;" spellcheck="false"></textarea>
+    <br>
+        <input type="checkbox" name="remove_punc" id="remove_punc">
+        <label for="remove_punc">Remove Punctuations</label>
+        <br>
+        <input type="checkbox" name="all_uppercase" id="all_uppercase">
+        <label for="all_uppercase">Make All Characters Uppercase</label>
+        <br>
+        <input type="checkbox" name="remove_newline" id="remove_newline">
+        <label for="remove_newline">Remove New Line</label>
+        <br>
+        <input type="checkbox" name="character_count" id="character_count">
+        <label for="character_count">Character Count</label>
+        <br>
+        <input type="checkbox" name="capitalize" id="capitalize">
+        <label for="capitalize">Capitalize First Letter</label>
+        <br>
+    <button type ='submit'>Analyze Text</button>
+
+        </form>
+</div>
+
+</body>
+</html>
